@@ -2,7 +2,19 @@
 CrankShaft is a framework for HubSpot CMS development that takes full advantage of HubSpot's capabilities to make development faster, enabling more performant, and higher quality websites.
 
 We are building the Crankshaft to the whole HubSpot Flywheel - hence the name.
-
+<hr>
+<div style="border:2px solid red; padding:15px;">
+   <h2>HubSpot Developer Day 2019</h2>
+   <p>HubSpot employees have indicated that due to budget reasons HubSpot may not be able to throw Developer Day 2019. The truth is, HubSpot doesn't actually have to foot the whole bill, they don't even have to do all of the organization around it. Us community developers can help organize the event and outline our needs and work together to figure out how to get those needs met. That includes volunteers, getting sponsorships and coordinating.</p><p> This project is a result of the community and so Developer Day 2019 is a shared benefit for all of us.</p> <p>Let's make Developer Day 2019 a reality. Join us in the HubSpot developer Slack in <a href="https://hubspotdev.slack.com/messages/CCGU4R4ER">#inbound19_dev_meetup</a> and check out and feel free to add to our <a href="https://docs.google.com/document/d/1PAB5YF25BA4nsPEnu01TCWxMCRpBWEJSHtqA12JTtf4/edit#">Google doc</a>, we're using to coordinate.</p>
+   <p>We need:
+   <ul>
+      <li>Volunteers</li>
+      <li>Sponsors</li>
+      <li>Input from the HS dev community.</li>
+   </ul>
+   </p>
+</div>
+<hr>
 
 This framework will be the foundation used for building:
 * Custom Templates
