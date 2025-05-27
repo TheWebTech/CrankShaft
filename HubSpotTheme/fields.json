@@ -1,0 +1,19 @@
+[
+  {
+    "name": "text_color",
+    "label": "Main Text Color",
+    "type": "color",
+    "default": {
+      "color": "#333333"
+    }
+  },
+  {
+    "name": "primary_font",
+    "label": "Primary Font",
+    "type": "font",
+    "default": {
+      "font": "Arial",
+      "font_set": "sans-serif"
+    }
+  }
+]

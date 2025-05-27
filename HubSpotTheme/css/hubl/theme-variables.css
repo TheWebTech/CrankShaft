@@ -1,0 +1,155 @@
+/**
+ * * CrankShaft/code/hubl/theme-variables.css
+ * * You should customize the variables here before building out your site. This file contains brand colors, grid
+ * * settings, optional additions and other important configuration settings.
+ */
+
+/* Colors */
+{% set baseColor      = "#333" %}    /* {# Dark Gray  |  Used on 'body' in 'Base'  |  Ex. "color: {{ baseColor }};" #} */
+{% set linkColor      = "gray" %}    /* {# Gray  |  Used on global anchors in 'Base'  |  Ex. "color: {{ linkColor }};" #} */
+{% set linkHover      = "#000" %}    /* {# Black  |  Used on global anchors in 'Base'  |  Ex. "color: {{ linkHover }};" #} */
+{% set accentColor1   = "#666" %}    /* {# Medium Gray  |  Ex. "color: {{ accentColor1 }};" #} */
+{% set accentColor2   = "#ccc" %}    /* {# Light Gray  |  Ex. "color: {{ accentColor2 }};" #} */
+{% set accentColor3   = "#ddd" %}    /* {# Lightest Gray  |  Ex. "color: {{ accentColor3 }};" #} */
+
+
+/* ======  @D.holdt addressing Add Color Variables to theme-variables.css ======*/
+/* How to use Color Variables 
+*
+*  1. Define your color variables semantically in {# what is the appropriate file for proper import? #} {# Ex. {% set brandBlue = #0366d6 %}
+*  2. Reference the desired color variable in the more generic variables.  {# ex. {% set primaryColor = brandBlue %}  #}
+*     2a. This method will make future edits to color sets more flexible (generic name used throughout CSS, 
+*         but semantically obvious at initial point of definition.
+*
+*   Helpful HubL Color Snippets  ( https://designers.hubspot.com/docs/hubl/hubl-supported-variables#variables-available-in-all-templates )
+*    1. {# site_settings.primary_color #}
+*    2. {# site_settings.secondary_color #}
+*    3. {# site_settings.primary_accent_color #}
+*    4. {# site_settings.secondary_accent_color #}
+*/
+
+{% set primaryColor    = yourVariableHere %}
+{% set secondaryColor  = yourVariableHere %}
+{% set tertiaryColor   = yourVariableHere %}
+{% set successColor    = yourVariableHere %}
+{% set dangerColor     = yourVariableHere %}
+{% set warningColor    = yourVariableHere %}
+{% set infoColor       = yourVariableHere %}
+
+{% set primaryColor_light   = color_variant(yourVariableHere, 15) %}  /*use this function to create a lighter or darker variant of a base color. Similar output to SASS*/
+{% set primaryColor_dark    = color_variant(yourVariableHere, -15) %}  /* 1 through 255 to lighten / -1 through -255 to darken   */
+
+
+/* Typography */
+{% set baseFontFamily    = "Arial, Sans-Serif" %}            /* {# Used on 'body' in 'Base'  |  Ex. "font-family: {{ baseFontFamily }};" #} */
+{% set baseFontSize      = "13px" %}                         /* {# Used on 'body' in 'Base'  |  Ex. "font-size: {{ baseFontSize }};" #} */
+{% set baseLineHeight    = "1.5" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "line-height: {{ baseLineHeight }};" #} */
+{% set webFont1          = "Helvetica, Arial, Sans-serif" %} /* {# Ex. "font-family: {{ webFont1 }};" #} */
+
+/* Containers */
+{% set maxWidth = "960px" %} /* Used on '.page-center' in 'Base' and in the 'Portrait tablet to landscape and desktop' media query */
+
+
+/* Containers */
+{% set maxWidth = "1140px" %} /* Used on '.page-center' in 'Base' and in the 'Portrait tablet to landscape and desktop' media query */
+{% set maxWidthWithOuterMargin = "1170px" %} /* Add some left/right padding to prevent content from bumping up to the canvas edge beyond maxwidth */
+
+/* Total Column Count / Default is 12 */
+
+{% set columnCount = 12 %} /* Used in cs-grid.css to create a variable column count for our grid system ----- ISSUE: Make grid column count a variable #60 */
+
+/*Media Queries
+* xs,sm,lmd,md,lg,xl all denote screen size range
+* up, down, denote the min and max for that range
+*/
+/*Extra Small - phones*/
+{% set xsDown= "575px"%}
+/*Small - Tablets*/
+{% set smUp= "576px"%}
+{% set smDown = "767px" %}
+/*Lower Medium - large tablets, small desktop/laptops*/
+{% set lmdUp = "768px"%}
+{% set lmdDown = "800px"%}
+/*Medium - Desktop/Laptop*/
+{% set mdUp = "801px"%}
+{% set mdDown ="991px"%}
+/*Large - Desktop/Laptop*/
+{% set lgup ="992px"%}
+{% set lgDown ="1199px"%}
+/*Extra Large - Wides screen desktop and laptops*/
+{% set xlUp ="1200px"%}
+
+{% set gridGutterWidth = "15" %}{#specified in px, do not include unit#}
+
+/* Set ul background color */
+{% set ulColor       = "" %} 
+
+/*  Set li background Color */
+{% set liColor       = "" %} 
+
+/*  Set link Color */
+{% set aColor        = "" %} 
+
+/*  Set link Hover Color */
+{% set aColorHover   = "" %} 
+
+/* Set Mobile Menu Background Color */
+{% set menuColorMobile = "#000000" %}   
+
+/* Set Link Color */
+{% set aColorMobile = "#ffffff" %} 
+
+/* Set Link Hover Color */     
+{% set aColorHoverMobile = "#ffffff" %} 
+
+/* Menu background color set off global mobile-menuColor variable */
+{{ menuColorMobile }}; 
+
+/* link color set by global mobile-aColor variable */
+{{ aColorMobile }}; 
+
+/* link hover color set by global mobile-aColorHover variable */
+{{ aColorHoverMobile }}; 
+
+/** Framework Settings 
+* * CrankShaft has a lot of features that can be enabled, disabled as well as configured, based on your website's needs. */
+/* CS comes with lots of helper macros, these do not increase file size of your output code as they are HubL based. Turn this off if you don't want to use any of them. */
+{% set csMacros = true %} /* Default: True */
+
+/* CS comes with a grid, this grid does increase file-size but*/
+{% set csGrid = true %} /* Default: True */
+
+/* CrankShaft supports HubSpot's grid classes, this enables the HubSpot Drag n Drop regions and drag and drop templates to work */
+{% set csHSGridFallback = true %} /* Default: True (recommended)*/
+
+/* CrankShaft comes with font weight variables to make it faster and easier to implement font weights based on their names shown in common programs. */
+{% set csFontWeightVars = true %} /* Default: True */
+
+/* Enable css font-smoothing across whole website - usually makes fonts display more consistently to Photoshop, XD, Illustrator, and other design apps. */
+{% set csFontSmoothing = true %} /* Default: True */
+
+/* Require Normalize (most recent from CDN) for whole website */
+{% set csRequireNormalize = true %}  /* Default: True */
+
+/* Require Font Awesome 5.8.2 */
+{% set csRequireFontAwesome = true %}  /* Default: True */
+
+
+{% if csFontWeightVars %}
+    /** Font Weights
+    Semi-standard font weights for typekit fonts
+    use them like this: font-weight:{{fwMedium}};
+    */
+    {% set fwThin = 100 %}
+    {% set fwExtraLight = 200%}
+    {% set fwLight = 300 %}
+    {% set fwNormal = 400 %}
+    {% set fwbook = fwNormal %}
+    {% set fwMedium = 500 %}
+    {% set fwDemiBold = 600 %}
+    {% set fwSemiBold = fwDemiBold %}
+    {% set fwBold = 700 %}
+    {% set fwHeavy = 800 %}
+    {% set fwBlack = 900 %}
+{% endif %}
+/* CrankShaft/code/hubl/theme-variables.css */

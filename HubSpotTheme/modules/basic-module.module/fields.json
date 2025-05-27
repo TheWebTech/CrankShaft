@@ -1,0 +1,13 @@
+[ {
+  "id" : "",
+  "name" : "Content",
+  "type" : "richtext",
+  "label" : "content_field",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "default" : null
+} ]

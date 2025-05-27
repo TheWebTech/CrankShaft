@@ -1,0 +1,29 @@
+{
+  "name": "New HubSpot Theme",
+  "version": "0.0.1",
+  "label": "New HubSpot Theme",
+  "description": "A new HubSpot theme converted from an older project.",
+  "author": "Your Name/Company",
+  "license": "LICENSE.md",
+  "global_settings": {
+    "enable_jquery": true,
+    "enable_font_awesome": false
+  },
+  "css_assets": [
+    {
+      "path": "css/main.css",
+      "name": "main-css",
+      "type": "stylesheet"
+    }
+  ],
+  "js_assets": [
+    {
+      "path": "js/main.js",
+      "name": "main-js",
+      "placement": "footer"
+    }
+  ],
+  "responsive_grid_settings": {
+    "enabled": true
+  }
+}

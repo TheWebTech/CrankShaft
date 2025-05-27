@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_direction }}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_meta.html_title }}</title>
+    {{ standard_hubspot_header_includes }}
+    {# Link to the theme's main CSS file, path relative to this template file #}
+    {{ require_css(get_asset_url("../../css/main.css")) }}
+    {# Include common head elements #}
+    {% include "../partials/head_includes.html" %}
+</head>
+<body>
+    {# Main drag and drop area for page content #}
+    {% dnd_area "body_area" label="Main Content Area", class="body-container" %}
+    {% end_dnd_area %}
+
+    {{ standard_hubspot_footer_includes }}
+    {# Link to the theme's main JavaScript file, path relative to this template file #}
+    {{ require_js(get_asset_url("../../js/main.js"), { placement: 'footer' }) }}
+</body>
+</html>

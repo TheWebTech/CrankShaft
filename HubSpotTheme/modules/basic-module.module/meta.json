@@ -1,0 +1,22 @@
+{
+  "contains_overridable_hubl_tags" : false,
+  "content_tags" : [ ],
+  "css_assets" : [ ],
+  "editable_contexts" : [ ],
+  "external_js" : [ ],
+  "extra_classes" : "",
+  "global" : false,
+  "help_text" : "",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "js_assets" : [ ],
+  "label" : "basic-module",
+  "other_assets" : [ ],
+  "placement_rules" : [ ],
+  "purchased" : false,
+  "smart_type" : "NOT_SMART",
+  "tags" : [ ],
+  "portal_id" : 5023859,
+  "id" : 9647309823,
+  "module_id" : 7771561,
+  "is_available_for_new_content" : true
+}

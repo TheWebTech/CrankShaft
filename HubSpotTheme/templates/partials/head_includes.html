@@ -1,0 +1,21 @@
+{# HubL Imports - Paths to be updated later #}
+{% import "../../css/hubl/theme-variables.css" %}
+{% import "../../css/hubl/theme-macros.css" %}
+
+{# Normalize.css - Consider making this conditional with a theme field #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+{# Manifest and Favicon Links - Paths to be updated to theme assets later #}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ get_asset_url('../../images/favicons/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ get_asset_url('../../images/favicons/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ get_asset_url('../../images/favicons/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ get_asset_url('../../images/favicons/site.webmanifest') }}">
+<link rel="mask-icon" href="{{ get_asset_url('../../images/favicons/safari-pinned-tab.svg') }}" color="#3abeeb">
+<meta name="msapplication-TileColor" content="#d630b0">
+<meta name="theme-color" content="#ffffff">
+
+{# Font Loading - Consider making FontAwesome conditional with a theme field #}
+{# Example: <link rel="stylesheet" href="https://use.typekit.net/TYPEKITID.css"> #}
+{# Example: <link href="https://fonts.googleapis.com/css?family=FONTNAME&display=swap" rel="stylesheet"> #}
+{# FontAwesome - Replace csRequireFontAwesome with theme field or remove if not needed #}
+<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
